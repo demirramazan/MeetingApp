@@ -26,7 +26,7 @@ public class EmployeeController {
         return employeeServiceImp.getEmployee(id);
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
     public List<Employee> saveEmployee(@RequestBody Employee employee) {
         employeeServiceImp.saveEmployee(employee);
 

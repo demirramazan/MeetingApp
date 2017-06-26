@@ -53,7 +53,7 @@ public class DepartmentServiceImp implements DepartmentService {
     public boolean deleteDepartment(Long departmentId) {
         Department department=departmentRepository.findOne(departmentId);
         if (department!=null){
-            departmentRepository.delete(departmentId);
+            departmentRepository.delete(department);
         }
         return false;
     }

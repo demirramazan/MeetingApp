@@ -35,8 +35,8 @@ public class MeetingServiceImp implements MeetingService {
     }
 
     @Override
-    public List<Meeting> updateMeeting(Meeting meeting) {
-        Meeting meeting1=meetingRepository.findOne(meeting.getId());
+    public List<Meeting> updateMeeting(Long id,Meeting meeting) {
+        Meeting meeting1=meetingRepository.findOne(id);
         if (meeting1!=null){
             meeting1.setName(meeting.getName());
             meeting1.setDescription(meeting.getDescription());

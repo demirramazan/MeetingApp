@@ -13,7 +13,7 @@ public interface MeetingService {
 
     public List<Meeting> saveMeeting(Meeting meeting);
 
-    public List<Meeting> updateMeeting(Meeting meeting);
+    public List<Meeting> updateMeeting(Long id,Meeting meeting);
 
     public List<Meeting> deleteMeeting(Long meetingId);
 }
