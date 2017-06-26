@@ -1,0 +1,477 @@
+{
+	"id": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+	"name": "spring-boot-rest-mvc",
+	"description": "",
+	"order": [
+		"5c295ad9-4b49-3419-ae7b-860d5c604eb0",
+		"f5bbb083-aed0-62f0-ef48-f2d8b93b6bf8",
+		"84fc0bf1-68ce-4edf-293b-e3e8746984a0",
+		"84d46d20-43e0-b664-6567-747d8fb5ef6a",
+		"acccac9a-7f61-35d5-dc86-4c07a8d832b7",
+		"e395a746-d0c4-a563-f41d-f1a820e786ab",
+		"62cd6494-446f-a83d-ccc5-34f18cf22b91",
+		"f9ba98f1-d5bc-5eb4-c2ab-4271a7a59130",
+		"6300abad-fe39-a95a-a2c8-1e351c172b8d",
+		"10e8d92e-f83a-8ab8-a79a-dbece2e5103d",
+		"b8216b2e-bd42-4a83-ff66-6aad470084ba",
+		"b4b54d43-667a-1df6-a0d0-d64a1b8e513f",
+		"63f264c0-e4af-2e9e-86a7-5321339a2115",
+		"b829f8d1-272f-1c4e-3b60-2bf439fdd0b9",
+		"abc60234-bf6c-2e40-403b-290aa6a9397e",
+		"53bdf52e-9a1f-aef8-34d6-635d703b7250"
+	],
+	"folders": [],
+	"timestamp": 1498484593836,
+	"owner": "1053050",
+	"public": false,
+	"requests": [
+		{
+			"id": "10e8d92e-f83a-8ab8-a79a-dbece2e5103d",
+			"url": "http://localhost:8085/department",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/department",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t\t\"name\": \"Test Design\",\r\n\t\t\t\t \"description\": \"This is test design description\",\r\n\t\t\t\t \"employees\": []\r\n}"
+		},
+		{
+			"id": "53bdf52e-9a1f-aef8-34d6-635d703b7250",
+			"url": "http://localhost:8085/employee/employees",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/employee/employees",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t\t\"id\": 3,\r\n                \"name\": \"ahsen\",\r\n                \"surname\": \"demir\",\r\n                \"salary\": 1500,\r\n                \"departmentId\": 2\r\n}"
+		},
+		{
+			"id": "5c295ad9-4b49-3419-ae7b-860d5c604eb0",
+			"url": "http://localhost:8085/meeting/1",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/meeting/1",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "    {\n        \n        \"name\": \"Retrospective Meeting\",\n        \"description\": \"Retrospective Meeting Meeting Description\",\n        \"departments\": [\n            {\n                \"id\": 1,\n                \"name\": \"Engineering\",\n                \"description\": \"This is engineering description\",\n                \"employees\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"ramazan\",\n                        \"surname\": \"demir\",\n                        \"salary\": 1200,\n                        \"departmentId\": 1\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Design\",\n                \"description\": \"This is design description\",\n                \"employees\": []\n            }\n        ]\n    }\n"
+		},
+		{
+			"id": "62cd6494-446f-a83d-ccc5-34f18cf22b91",
+			"url": "http://localhost:8085/department/3",
+			"queryParams": [],
+			"method": "DELETE",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/department/3",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "\r\n{\r\n\t\t\t\t\"id\":2,\r\n\t\t\t    \"name\": \"Presentation Department\",\r\n\t\t\t\t\"description\": \"This is Presentation Department description\",\r\n\t\t\t\t\"employees\": []\r\n}"
+		},
+		{
+			"id": "6300abad-fe39-a95a-a2c8-1e351c172b8d",
+			"url": "http://localhost:8085/employee/addEmployee",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/employee/addEmployee",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t    \"name\": \"zeynep\",\r\n                \"surname\": \"demir\",\r\n                \"salary\": 1500,\r\n                \"departmentId\": 2\r\n}"
+		},
+		{
+			"id": "63f264c0-e4af-2e9e-86a7-5321339a2115",
+			"url": "http://localhost:8085/employee/employee/2",
+			"queryParams": [],
+			"method": "PUT",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/employee/employee/2",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t\t\"id\":2,\t\r\n\t\t\t    \"name\": \"abdullah\",\r\n                \"surname\": \"demir\",\r\n                \"salary\": 1700,\r\n                \"departmentId\": 2\r\n}"
+		},
+		{
+			"id": "84d46d20-43e0-b664-6567-747d8fb5ef6a",
+			"url": "http://localhost:8085/meetings",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/meetings",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "\r\n{\r\n\t\t\t\t\"id\":1,\r\n\t\t\t    \"name\": \"Development Meeting\",\r\n\t\t\t\t\"description\": \"This is Development Meeting description\",\r\n\t\t\t\t\"departments\": []\r\n}"
+		},
+		{
+			"id": "84fc0bf1-68ce-4edf-293b-e3e8746984a0",
+			"url": "http://localhost:8085/meeting/1",
+			"queryParams": [],
+			"method": "PUT",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/meeting/1",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "    {\n        \"id\": 1,\n        \"name\": \"Revision Update\",\n        \"description\": \"Revision Update Meeting Description\",\n        \"departments\": [\n            {\n                \"id\": 1,\n                \"name\": \"Engineering\",\n                \"description\": \"This is engineering description\",\n                \"employees\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"ramazan\",\n                        \"surname\": \"demir\",\n                        \"salary\": 1200,\n                        \"departmentId\": 1\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Design\",\n                \"description\": \"This is design description\",\n                \"employees\": []\n            }\n        ]\n    }\n"
+		},
+		{
+			"id": "abc60234-bf6c-2e40-403b-290aa6a9397e",
+			"url": "http://localhost:8085/employee/employee/1",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/employee/employee/1",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t\t\"id\": 3,\r\n                \"name\": \"ahsen\",\r\n                \"surname\": \"demir\",\r\n                \"salary\": 1500,\r\n                \"departmentId\": 2\r\n}"
+		},
+		{
+			"id": "acccac9a-7f61-35d5-dc86-4c07a8d832b7",
+			"url": "http://localhost:8085/meeting",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/meeting",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "\r\n{\r\n\t\t\t\t\"id\":1,\r\n\t\t\t    \"name\": \"Development Meeting\",\r\n\t\t\t\t\"description\": \"This is Development Meeting description\",\r\n\t\t\t\t\"departments\": []\r\n}"
+		},
+		{
+			"id": "b4b54d43-667a-1df6-a0d0-d64a1b8e513f",
+			"url": "http://localhost:8085/employee/employee/2",
+			"queryParams": [],
+			"method": "DELETE",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/employee/employee/2",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t\t\"id\":2,\t\r\n\t\t\t    \"name\": \"abdullah\",\r\n                \"surname\": \"demir\",\r\n                \"salary\": 1700,\r\n                \"departmentId\": 2\r\n}"
+		},
+		{
+			"id": "b8216b2e-bd42-4a83-ff66-6aad470084ba",
+			"url": "http://localhost:8085/department/2",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/department/2",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t\t\"id\":2,\t\r\n\t\t\t    \"name\": \"abdullah\",\r\n                \"surname\": \"demir\",\r\n                \"salary\": 1700,\r\n                \"departmentId\": 2\r\n}"
+		},
+		{
+			"id": "b829f8d1-272f-1c4e-3b60-2bf439fdd0b9",
+			"url": "http://localhost:8085/employee/save",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/employee/save",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "{\r\n\t\t\t    \"name\": \"zeynep\",\r\n                \"surname\": \"demir\",\r\n                \"salary\": 1500,\r\n                \"departmentId\": 2\r\n}"
+		},
+		{
+			"id": "e395a746-d0c4-a563-f41d-f1a820e786ab",
+			"url": "http://localhost:8085/department",
+			"queryParams": [],
+			"method": "PUT",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/department",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "\r\n{\r\n\t\t\t\t\"id\":2,\r\n\t\t\t    \"name\": \"Presentation Department Update\",\r\n\t\t\t\t\"description\": \"This is Presentation Department description\",\r\n\t\t\t\t\"employees\": []\r\n}"
+		},
+		{
+			"id": "f5bbb083-aed0-62f0-ef48-f2d8b93b6bf8",
+			"url": "http://localhost:8085/meeting",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/meeting",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "    {\n        \n        \"name\": \"Retrospective Meeting\",\n        \"description\": \"Retrospective Meeting Meeting Description\",\n        \"departments\": [\n            {\n                \"id\": 1,\n                \"name\": \"Engineering\",\n                \"description\": \"This is engineering description\",\n                \"employees\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"ramazan\",\n                        \"surname\": \"demir\",\n                        \"salary\": 1200,\n                        \"departmentId\": 1\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Design\",\n                \"description\": \"This is design description\",\n                \"employees\": []\n            }\n        ]\n    }\n"
+		},
+		{
+			"id": "f9ba98f1-d5bc-5eb4-c2ab-4271a7a59130",
+			"url": "http://localhost:8085/departments",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "http://localhost:8085/departments",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "2af9a29a-4436-8f91-0bad-eaf9e2aa5b8c",
+			"rawModeData": "\r\n{\r\n\t\t\t\t\"id\":2,\r\n\t\t\t    \"name\": \"Presentation Department\",\r\n\t\t\t\t\"description\": \"This is Presentation Department description\",\r\n\t\t\t\t\"employees\": []\r\n}"
+		}
+	]
+}
