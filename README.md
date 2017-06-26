@@ -5,7 +5,7 @@ Spring Boot &amp; React Application <br>
 Kullanılar teknolojiler: <br/>
 Backend  :  Spring Boot, Spring Data, Hibernate, Lombok, Rest MVC, Junit <br>
 Frontend : React.js <br/>
-React client : <a href="https://github.com/demirramazan/AssignmentMebiTech/tree/master/src/main/script">client</a><br><br>
+React client : <a href="https://github.com/demirramazan/AssignmentMebiTech/tree/master/src/main/react-client">client</a><br><br>
 
 #Endpoints: <br>
 
