@@ -30,7 +30,7 @@ public class DatabaseLoader implements CommandLineRunner {
 
         departmentRepository.save(new Department(3L, "engineering&design", "This is engineering&design description"));
 
-        repository.save(new Employee(1L, "ramazan", "demir", 1200, 1L));
+        repository.save(new Employee(1L, "ramazan", "demir", 5200, 1L));
 
         meetingRepository.save(new Meeting(1L,"Revision","Revision Meeting Description", Arrays.asList(departmentRepository.getOne(1L),departmentRepository.getOne(2L))));
 
