@@ -1,15 +1,24 @@
 package com.rdemir.assginment.controller;
 
+import com.rdemir.assginment.annotation.JsonRestController;
 import com.rdemir.assginment.entity.Employee;
 import com.rdemir.assginment.service.EmployeeService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@RestController
+@JsonRestController
 @RequestMapping("/employee")
+@Api(value = "Employee Rest Services")
 public class EmployeeController {
 
     @Autowired
@@ -17,6 +26,9 @@ public class EmployeeController {
     public EmployeeService employeeServiceImp;
 
     @RequestMapping(value = "/employees", method = RequestMethod.GET)
+
+    @ApiOperation("Get employees")
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "OK", response = Employee.class)})
     public List<Employee> getEmployes() {
         return employeeServiceImp.getEmployes();
     }
