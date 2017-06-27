@@ -27,6 +27,7 @@ Meeting :  HTTP GET : http://localhost:8085/meetings<br>
            HTTP PUT : http://localhost:8085/meeting/1<br>
            HTTP DELETE : http://localhost:8085/meeting/1<br>
            
+    Rest Services Documentation url: http://localhost:8085/swagger-ui.html
            
    Client:<br>
    
