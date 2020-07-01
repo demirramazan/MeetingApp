@@ -1,8 +1,8 @@
-package com.rdemir.assginment.service.imp;
+package com.rdemir.meeting.service.imp;
 
-import com.rdemir.assginment.entity.Employee;
-import com.rdemir.assginment.repository.EmployeeRepository;
-import com.rdemir.assginment.service.EmployeeService;
+import com.rdemir.meeting.entity.Employee;
+import com.rdemir.meeting.repository.EmployeeRepository;
+import com.rdemir.meeting.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
