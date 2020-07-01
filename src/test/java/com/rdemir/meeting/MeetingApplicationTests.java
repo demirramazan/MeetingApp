@@ -1,12 +1,13 @@
-package com.rdemir.assginment;
+package com.rdemir.meeting;
 
-import com.rdemir.assginment.controller.EmployeeController;
-import com.rdemir.assginment.entity.Department;
-import com.rdemir.assginment.entity.Employee;
-import com.rdemir.assginment.entity.Meeting;
-import com.rdemir.assginment.service.imp.EmployeeServiceImp;
+import com.rdemir.meeting.controller.EmployeeController;
+import com.rdemir.meeting.entity.Department;
+import com.rdemir.meeting.entity.Employee;
+import com.rdemir.meeting.entity.Meeting;
+import com.rdemir.meeting.service.imp.EmployeeServiceImp;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -16,7 +17,7 @@ import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AssignmentmebiApplicationTests {
+public class MeetingApplicationTests {
 
     @Autowired
     private EmployeeServiceImp employeeServiceImp;
@@ -24,11 +25,14 @@ public class AssignmentmebiApplicationTests {
     @Autowired
     private EmployeeController employeeController;
 
-    static Employee employee;
+    @Mock
+    Employee employee;
 
-    static Department department;
+    @Mock
+    Department department;
 
-    static Meeting meeting;
+    @Mock
+    Meeting meeting;
 //    @Before
 //    public void setUp() throws Exception {
 //        department=new Department(1L,"software","software department description");

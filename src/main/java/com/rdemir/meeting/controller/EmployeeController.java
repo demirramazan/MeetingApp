@@ -1,8 +1,8 @@
-package com.rdemir.assginment.controller;
+package com.rdemir.meeting.controller;
 
-import com.rdemir.assginment.annotation.JsonRestController;
-import com.rdemir.assginment.entity.Employee;
-import com.rdemir.assginment.service.EmployeeService;
+import com.rdemir.meeting.annotation.JsonRestController;
+import com.rdemir.meeting.entity.Employee;
+import com.rdemir.meeting.service.EmployeeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

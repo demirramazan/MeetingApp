@@ -1,4 +1,4 @@
-package com.rdemir.assginment.annotation;
+package com.rdemir.meeting.annotation;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;

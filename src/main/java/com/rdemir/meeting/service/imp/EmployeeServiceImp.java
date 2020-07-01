@@ -23,12 +23,12 @@ public class EmployeeServiceImp implements EmployeeService {
 
     @Override
     public Employee getEmployee(Long id) {
-        return repository.findOne(id);
+        return repository.findById(id).orElse(null);
     }
 
     @Override
     public boolean saveEmployee(Employee employee) {
-        if (employee!=null){
+        if (employee != null) {
             repository.save(employee);
             return true;
         }
@@ -37,8 +37,9 @@ public class EmployeeServiceImp implements EmployeeService {
 
     @Override
     public boolean updateEmploye(Employee employee) {
-        Employee employee1=repository.findOne(employee.getId());
-        if (employee1!=null){
+        Employee employee1 = repository.findById(employee.getId())
+                .orElse(null);
+        if (employee1 != null) {
             employee1.setName(employee.getName());
             employee1.setSurname(employee.getSurname());
             employee1.setSalary(employee.getSalary());
@@ -50,7 +51,13 @@ public class EmployeeServiceImp implements EmployeeService {
 
     @Override
     public boolean deleteEmploye(Long empId) {
-        repository.delete(empId);
-        return false;
+        boolean isDeleted = false;
+        try {
+            repository.deleteById(empId);
+            isDeleted = true;
+        } catch (Exception e) {
+            isDeleted = false;
+        }
+        return isDeleted;
     }
 }

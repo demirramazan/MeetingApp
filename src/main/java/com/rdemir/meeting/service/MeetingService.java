@@ -1,7 +1,7 @@
-package com.rdemir.assginment.service;
+package com.rdemir.meeting.service;
 
 
-import com.rdemir.assginment.entity.Meeting;
+import com.rdemir.meeting.entity.Meeting;
 
 import java.util.List;
 

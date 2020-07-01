@@ -1,4 +1,4 @@
-package com.rdemir.assginment.config;
+package com.rdemir.meeting.config;
 
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;

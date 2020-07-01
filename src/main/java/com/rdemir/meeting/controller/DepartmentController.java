@@ -1,8 +1,8 @@
-package com.rdemir.assginment.controller;
+package com.rdemir.meeting.controller;
 
-import com.rdemir.assginment.annotation.JsonRestController;
-import com.rdemir.assginment.entity.Department;
-import com.rdemir.assginment.service.DepartmentService;
+import com.rdemir.meeting.annotation.JsonRestController;
+import com.rdemir.meeting.entity.Department;
+import com.rdemir.meeting.service.DepartmentService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -33,7 +33,6 @@ public class DepartmentController {
     }
 
     @RequestMapping(value = "/department/{id}",method = RequestMethod.GET)
-
     @ApiOperation("with departmentId get one department")
     @ApiResponses(value = {@ApiResponse(code = 200,message = "OK",response = Department.class)})
     public Department getDepartment(@PathVariable Long id){
@@ -57,7 +56,6 @@ public class DepartmentController {
     @RequestMapping(path = "/department/{id}",method = RequestMethod.DELETE)
     public List<Department> deleteDepartment(@PathVariable Long id){
         departmentServiceImp.deleteDepartment(id);
-
         return departmentServiceImp.getDepartments();
     }
 }

@@ -1,6 +1,6 @@
-package com.rdemir.assginment.repository;
+package com.rdemir.meeting.repository;
 
-import com.rdemir.assginment.entity.Department;
+import com.rdemir.meeting.entity.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

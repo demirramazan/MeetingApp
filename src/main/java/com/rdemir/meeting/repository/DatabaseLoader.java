@@ -1,9 +1,8 @@
-package com.rdemir.assginment.repository;
+package com.rdemir.meeting.repository;
 
-import com.rdemir.assginment.entity.Department;
-import com.rdemir.assginment.entity.Employee;
-import com.rdemir.assginment.entity.Meeting;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.rdemir.meeting.entity.Department;
+import com.rdemir.meeting.entity.Employee;
+import com.rdemir.meeting.entity.Meeting;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -12,14 +11,17 @@ import java.util.Arrays;
 @Component
 public class DatabaseLoader implements CommandLineRunner {
 
-    @Autowired
-    private EmployeeRepository repository;
+    private final EmployeeRepository repository;
 
-    @Autowired
-    private DepartmentRepository departmentRepository;
+    private final DepartmentRepository departmentRepository;
 
-    @Autowired
-    private MeetingRepository meetingRepository;
+    private final MeetingRepository meetingRepository;
+
+    public DatabaseLoader(DepartmentRepository departmentRepository, EmployeeRepository repository, MeetingRepository meetingRepository) {
+        this.departmentRepository = departmentRepository;
+        this.repository = repository;
+        this.meetingRepository = meetingRepository;
+    }
 
     @Override
     public void run(String... strings) throws Exception {

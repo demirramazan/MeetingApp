@@ -1,10 +1,9 @@
-package com.rdemir.assginment.service.imp;
+package com.rdemir.meeting.service.imp;
 
 
-import com.rdemir.assginment.entity.Meeting;
-import com.rdemir.assginment.repository.MeetingRepository;
-import com.rdemir.assginment.service.MeetingService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.rdemir.meeting.entity.Meeting;
+import com.rdemir.meeting.repository.MeetingRepository;
+import com.rdemir.meeting.service.MeetingService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,8 +13,11 @@ import java.util.List;
 @Transactional
 public class MeetingServiceImp implements MeetingService {
 
-    @Autowired
-    MeetingRepository meetingRepository;
+    private final MeetingRepository meetingRepository;
+
+    public MeetingServiceImp(MeetingRepository meetingRepository) {
+        this.meetingRepository = meetingRepository;
+    }
 
     @Override
     public List<Meeting> getMeetings() {
@@ -24,7 +26,7 @@ public class MeetingServiceImp implements MeetingService {
 
     @Override
     public Meeting getMeeting(Long meetingId) {
-        return meetingRepository.findOne(meetingId);
+        return meetingRepository.findById(meetingId).orElse(null);
     }
 
     @Override
@@ -35,9 +37,9 @@ public class MeetingServiceImp implements MeetingService {
     }
 
     @Override
-    public List<Meeting> updateMeeting(Long id,Meeting meeting) {
-        Meeting meeting1=meetingRepository.findOne(id);
-        if (meeting1!=null){
+    public List<Meeting> updateMeeting(Long id, Meeting meeting) {
+        Meeting meeting1 = meetingRepository.findById(id).orElse(null);
+        if (meeting1 != null) {
             meeting1.setName(meeting.getName());
             meeting1.setDescription(meeting.getDescription());
             meeting1.setDepartments(meeting.getDepartments());
@@ -48,7 +50,13 @@ public class MeetingServiceImp implements MeetingService {
 
     @Override
     public List<Meeting> deleteMeeting(Long meetingId) {
-        meetingRepository.delete(meetingId);
-        return meetingRepository.findAll();
+        List<Meeting> allMeeting;
+        try {
+            meetingRepository.deleteById(meetingId);
+            allMeeting = meetingRepository.findAll();
+        } catch (Exception e) {
+            throw new RuntimeException(e.getCause());
+        }
+        return allMeeting;
     }
 }

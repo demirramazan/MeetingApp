@@ -1,6 +1,6 @@
-package com.rdemir.assginment.service;
+package com.rdemir.meeting.service;
 
-import com.rdemir.assginment.entity.Employee;
+import com.rdemir.meeting.entity.Employee;
 
 import java.util.List;
 

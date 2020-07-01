@@ -1,4 +1,4 @@
-package com.rdemir.assginment.entity;
+package com.rdemir.meeting.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,7 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Meeting implements Serializable {
-
 
     private static final long serialVersionUID = 1L;
 

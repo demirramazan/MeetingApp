@@ -1,8 +1,8 @@
-package com.rdemir.assginment.controller;
+package com.rdemir.meeting.controller;
 
-import com.rdemir.assginment.annotation.JsonRestController;
-import com.rdemir.assginment.entity.Meeting;
-import com.rdemir.assginment.service.imp.MeetingServiceImp;
+import com.rdemir.meeting.annotation.JsonRestController;
+import com.rdemir.meeting.entity.Meeting;
+import com.rdemir.meeting.service.imp.MeetingServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
